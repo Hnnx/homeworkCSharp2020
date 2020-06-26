@@ -12,13 +12,12 @@ namespace homeworkCSharp2020
 
             if(starost > 9999 || starost < 1000)
             {
-                Console.WriteLine("4 digits");
+                Console.WriteLine("Please insert 4 digits");
+
 
                 
 
             }
-
-
 
         }
     }
