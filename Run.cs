@@ -33,15 +33,12 @@ namespace homeworkCSharp2020
             Console.WriteLine("Program naj sprejme 1 argument v obliki celega stevila. Podan argument naj bo 4 mestno stevilo, ki predstavlja letnico rojstva.\n" +
                 "Program naj izpise: \"Stari ste XX let.Lahko se udelezite volitev.\",\nce je starost 18 ali vec, ce pa je manj pa naj izpise: \"Zal ste premladi.Volitev se lahko udelezite cez XX let.\n" +
                 "Na mestu XX naj se izpisejo primerne stevilske vrednosti glede na vneseno letnico.");
-
-            nal4.func("1990");
-            nal4.func("2019");
-            nal4.func("2020");
             nal4.func("2002");
-            nal4.func("2003");
+            Console.WriteLine("\n");
 
-
-
+            Console.WriteLine("Naloga 5:");
+            Console.WriteLine("Napisi program, ki sprejme argument v obliki niza ter izpise vsako drugo crko.");
+            nal5.func("123456789012345");
 
         }
     }
