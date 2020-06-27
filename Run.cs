@@ -40,6 +40,9 @@ namespace homeworkCSharp2020
             Console.WriteLine("Napisi program, ki sprejme argument v obliki niza ter izpise vsako drugo crko.");
             nal5.func("123456789012345");
 
+            Console.WriteLine("Naloga 6:");
+            Console.WriteLine("Napisi program, ki sprejme argument v obliki niza. Program naj izpise nakljucno crko iz niza ter drugo in predzadnjo crko iz niza.");
+            nal6.func("aa");
         }
     }
 }
