@@ -11,7 +11,7 @@ namespace homeworkCSharp2020
 
         static void Main(string[] args)
         {
-
+            /*
             Console.WriteLine("Naloga 1:");
             Console.WriteLine("Napisi program, ki bo izracunal in izpisal rezultata racunov:\n"+
             "1) (10 + 5) / 3 = ?\n"+
@@ -39,10 +39,27 @@ namespace homeworkCSharp2020
             Console.WriteLine("Naloga 5:");
             Console.WriteLine("Napisi program, ki sprejme argument v obliki niza ter izpise vsako drugo crko.");
             nal5.func("123456789012345");
-
             Console.WriteLine("Naloga 6:");
             Console.WriteLine("Napisi program, ki sprejme argument v obliki niza. Program naj izpise nakljucno crko iz niza ter drugo in predzadnjo crko iz niza.");
-            nal6.func("aa");
+            nal6.func("AZBESTOS");
+
+
+            Console.WriteLine("Naloga 7:");
+            Console.WriteLine("Program naj sprejme argument v obliki niza in preveri ali je niz palindrom.");
+            nal7.func("FRACA");
+            nal7.func("ANAANA");
+
+            Console.WriteLine("Naloga 8:");
+            Console.WriteLine("Napisi program, ki bo sprejel dva argumenta v obliki celih stevil ter izrisal pravokotnik z zvezdicami, kjer prvi argument predstavlja stevilo vrstic, drugi pa stevilo stolpcev oz. zvezdic v vrstici.");
+            nal8.func(5, 5);
+
+            */
+
+            Console.WriteLine("Naloga 9:");
+            Console.WriteLine("Napisi program k z zvezdicami izpise nakljucno velik trikotnik. Trikotnik naj bo obrnjen navzdol visina trikotnika naj bo vsaj 3 in največ 15 vrstic.");
+
+
+
         }
     }
 }
