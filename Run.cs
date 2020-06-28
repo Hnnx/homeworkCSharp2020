@@ -73,6 +73,11 @@ namespace homeworkCSharp2020
 
             */
 
+            Console.WriteLine("Naloga 10:");
+            Console.WriteLine("Program naj sprejeme argument tipa String, nato naj izpise koliko krat se v sprejetem nizu pojavta crki ‘a’  in ’t’. Stevilo pojavitev naj izpise v stevilu in v procentih.");
+            nal10.func("hfjkasbfjklhasdhfjkuzsd");
+
+
         }
     }
 }
