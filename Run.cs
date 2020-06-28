@@ -53,12 +53,25 @@ namespace homeworkCSharp2020
             Console.WriteLine("Napisi program, ki bo sprejel dva argumenta v obliki celih stevil ter izrisal pravokotnik z zvezdicami, kjer prvi argument predstavlja stevilo vrstic, drugi pa stevilo stolpcev oz. zvezdic v vrstici.");
             nal8.func(5, 5);
 
-            */
 
             Console.WriteLine("Naloga 9:");
             Console.WriteLine("Napisi program k z zvezdicami izpise nakljucno velik trikotnik. Trikotnik naj bo obrnjen navzdol visina trikotnika naj bo vsaj 3 in največ 15 vrstic.");
+            nal9.func();
+            nal9.func();
 
 
+            Console.WriteLine("Naloga 9 - Bonus");
+            Console.WriteLine("Napisi program ki z zvezdicami izpise jelko. Visina krosnje naj bo 9 vrstic, deblo pa 2 vrstici sirina debla pa 3 zvezdice.");
+            Console.WriteLine("BONUS2: Program naj visino krosnje prejme prek argumenta. Deblo je vedno 2 vrstici in 3 zvezdice.");
+
+            for (int i = 3; i < 9; i++)
+            {
+
+                nal9_01.func(i);
+
+            }
+
+            */
 
         }
     }
