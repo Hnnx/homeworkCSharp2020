@@ -90,7 +90,6 @@ namespace homeworkCSharp2020
             Console.WriteLine("Program naj izpise vsa stevila med 0 in 14000, ki so hkrati deljiva z 5, 11 in 13.");
             nal13.func();
 
-            */
 
 
             Console.WriteLine("naloga 14");
@@ -101,7 +100,12 @@ namespace homeworkCSharp2020
             nal14.showSeven();
             nal14.calcAll();
 
+            */
 
+
+            Console.WriteLine("Naloga 15:");
+            Console.WriteLine("V programu definiraj 4 dimenzionalno tabelo tipa int poljubne velikosti.\nTabelo napolni z nakljucnimi vrednostmi med 1 in 10 ter tabelo izpisi.");
+            nal15.fourDimDisplay();
 
 
 
