@@ -80,10 +80,16 @@ namespace homeworkCSharp2020
             Console.WriteLine("Program naj sprejme argument v obliki celega stevila. Program naj izpise ime meseca, katerega koledarsko zaporedje se ujema z vnesenim stevilom.\nCe vneseno stevilo ni enako nobenemu mesecu naj program izpiše: \"Great Scott!\".");
             nal11.func(3);
 
-            */
 
             Console.WriteLine("Naloga 12");
             Console.WriteLine("Napisi program, ki preko argumenta sprejme 6 mestno stevilo. Ce vnešeno Stevilo ni 6 mestno naj se izpiše:\n\"Stevilo ne ustreza pogojem\".\nCe vneseno stevilo ustreza pogojem, naj program sesteje prve tri števila z zadnjimi tremi.");
+            nal12.func(111111);
+
+            */
+
+            Console.WriteLine("Naloga 13");
+            Console.WriteLine("Program naj izpise vsa stevila med 0 in 14000, ki so hkrati deljiva z 5, 11 in 13.");
+            nal13.func();
 
 
         }
