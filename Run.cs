@@ -71,11 +71,19 @@ namespace homeworkCSharp2020
 
             }
 
-            */
 
             Console.WriteLine("Naloga 10:");
             Console.WriteLine("Program naj sprejeme argument tipa String, nato naj izpise koliko krat se v sprejetem nizu pojavta crki ‘a’  in ’t’. Stevilo pojavitev naj izpise v stevilu in v procentih.");
-            nal10.func("hfjkasbfjklhasdhfjkuzsd");
+            nal10.func("Torta");
+
+            Console.WriteLine("Naloga 11:");
+            Console.WriteLine("Program naj sprejme argument v obliki celega stevila. Program naj izpise ime meseca, katerega koledarsko zaporedje se ujema z vnesenim stevilom.\nCe vneseno stevilo ni enako nobenemu mesecu naj program izpiše: \"Great Scott!\".");
+            nal11.func(3);
+
+            */
+
+            Console.WriteLine("Naloga 12");
+            Console.WriteLine("Napisi program, ki preko argumenta sprejme 6 mestno stevilo. Ce vnešeno Stevilo ni 6 mestno naj se izpiše:\n\"Stevilo ne ustreza pogojem\".\nCe vneseno stevilo ustreza pogojem, naj program sesteje prve tri števila z zadnjimi tremi.");
 
 
         }
