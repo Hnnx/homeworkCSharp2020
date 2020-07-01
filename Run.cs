@@ -100,12 +100,22 @@ namespace homeworkCSharp2020
             nal14.showSeven();
             nal14.calcAll();
 
-            */
 
 
             Console.WriteLine("Naloga 15:");
             Console.WriteLine("V programu definiraj 4 dimenzionalno tabelo tipa int poljubne velikosti.\nTabelo napolni z nakljucnimi vrednostmi med 1 in 10 ter tabelo izpisi.");
             nal15.fourDimDisplay();
+
+            */
+
+
+            Console.WriteLine("Naloga 16:");
+            Console.WriteLine("Program naj od uporabnika zahteva vnos 2 števil, ki predstavljata velikost dvo dimenzionalne tabele tipa int[][].\n Program naj tabelo napolni z naključnimi števili vrednosti med 1 in 170." +
+                "\n\n\nProgram naj izpiše tabelo\nProgram naj sešteje in izpiše vrednost vseh števil v tabeli." +
+                "\nProgram naj sešteje in izpiše vrednost posameznih vrstic tabele.\nProgram naj sešteje in izpiše vrednost posameznih stolpcev tabele.");
+            nal16.func();
+
+
 
 
 
