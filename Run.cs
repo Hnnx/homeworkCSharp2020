@@ -106,7 +106,6 @@ namespace homeworkCSharp2020
             Console.WriteLine("V programu definiraj 4 dimenzionalno tabelo tipa int poljubne velikosti.\nTabelo napolni z nakljucnimi vrednostmi med 1 in 10 ter tabelo izpisi.");
             nal15.fourDimDisplay();
 
-            */
 
 
             Console.WriteLine("Naloga 16:");
@@ -117,11 +116,21 @@ namespace homeworkCSharp2020
 
 
 
+            Console.WriteLine("Naloga 17:");
+            Console.WriteLine("V programu definiraj tabelo String[][] nakljucne velikosti med 1 in 5 (Math.random()).\nProgram naj uporabnika vprasa naj vnese niz za vsako celico tabele.Program naj nato tabelo izpiše.");
+            nal17.func();
 
 
 
+            Console.WriteLine("Naloga 18:");
+            Console.WriteLine("Kalkulatorju, ki smo ga naredili na vajah dodaj se vsaj dve funkciji. (referenca - Java calculator)");
+            nal18.izbirniMeni();
 
+            */
 
+            Console.WriteLine("Naloga 19:");
+            Console.WriteLine("Program z vaje Metode3.java spremeni tako, da se za zadnjim številom v tabeli ne izpiše vejica.");
+            nal19.func();
 
 
 
