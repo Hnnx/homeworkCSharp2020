@@ -9,7 +9,7 @@ namespace homeworkCSharp2020
 
 
         //IZBIRNI MENI
-        private static void izbirniMeni()
+        public static void izbirniMeni()
         {
 
             Console.WriteLine("1 - Sestej");
@@ -27,6 +27,7 @@ namespace homeworkCSharp2020
             try
             {
                 int izbira = Convert.ToInt32(Console.ReadLine());
+                stikalo(izbira);
 
             }
             catch (Exception e)
@@ -82,17 +83,49 @@ namespace homeworkCSharp2020
 
         private static void izhod()
         {
-            //IMPLEMENT SYS.EXIT(1)
+            Console.WriteLine("Zelis zakljuciti program? Y/N");
+
+            string choice = Console.ReadLine();
+
+            if(choice.Equals("y", StringComparison.OrdinalIgnoreCase))
+            {
+                Environment.Exit(0);
+            }
+            else
+            {
+                izbirniMeni();
+            }
+
+            
         }
 
         private static void koren()
         {
-            //IMPLEMENT KOREN
+
+            try
+            {
+                Console.WriteLine("Vnesi stevilo");
+                int x = Convert.ToInt32(Console.ReadLine());
+                double y = Math.Sqrt(x);
+                Console.WriteLine("Koren stevila {0} je {1}", x, y);
+                repeat();
+
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Napacen ukaz, opis napake:");
+                Console.WriteLine(e.Message);
+            }
+
+
+
         }
 
         private static void fib()
         {
             //IMPLEMENT FIB
+            repeat();
         }
 
         private static void ostanek()
@@ -104,8 +137,9 @@ namespace homeworkCSharp2020
                 int x = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Vnesi drugo stevilo");
                 int y = Convert.ToInt32(Console.ReadLine());
-                int z = x % y;
+                double z =  x % y;
                 Console.WriteLine("{0} % {1} = {2}", x, y, z);
+                repeat();
             }
             catch (Exception e)
             {
@@ -122,7 +156,8 @@ namespace homeworkCSharp2020
 
                 Console.WriteLine("Vnesi stevilo");
                 int x = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine(x *=x);
+                Console.WriteLine("Kvadrat stevila {0} je {1}", x, x *= x);
+                repeat();
             }
             catch (Exception e)
             {
@@ -144,9 +179,10 @@ namespace homeworkCSharp2020
                 Console.WriteLine("Vnesi potenco");
                 int y = Convert.ToInt32(Console.ReadLine());
 
-                int z = (int)Math.Pow(x, y);
+                double z = Math.Pow(x, y);
 
                 Console.WriteLine("{0} na {1} potenco = {2}", x, y, z);
+                repeat();
 
             }
             catch (Exception e)
@@ -170,6 +206,8 @@ namespace homeworkCSharp2020
                 int y = Convert.ToInt32(Console.ReadLine());
                 int z = x / y;
                 Console.WriteLine("{0} / {1} = {2}", x, y, z);
+
+                repeat();
             }
             catch (Exception e)
             {
@@ -178,7 +216,7 @@ namespace homeworkCSharp2020
             }
         }
 
-       private static void mnozi()
+        private static void mnozi()
         {
 
             try
@@ -189,6 +227,7 @@ namespace homeworkCSharp2020
                 int y = Convert.ToInt32(Console.ReadLine());
                 int z = x * y;
                 Console.WriteLine("{0} - {1} = {2}", x, y, z);
+                repeat();
             }
             catch (Exception e)
             {
@@ -208,6 +247,7 @@ namespace homeworkCSharp2020
                 int y = Convert.ToInt32(Console.ReadLine());
                 int z = x - y;
                 Console.WriteLine("{0} - {1} = {2}", x, y, z);
+                repeat();
             }
             catch (Exception e)
             {
@@ -228,6 +268,7 @@ namespace homeworkCSharp2020
                 int z = x + y;
 
                 Console.WriteLine("{0} + {1} = {2}", x, y, z);
+                repeat();
             }
             catch (Exception e)
             {
@@ -236,6 +277,28 @@ namespace homeworkCSharp2020
             }
 
 
+        }
+
+        private static void repeat()
+        {
+            Console.WriteLine("Nadaljuj? Y/N");
+
+            try
+            {
+                string choice = Console.ReadLine();
+                if( choice.Equals("Y", StringComparison.OrdinalIgnoreCase)){
+                    izbirniMeni();
+                }
+                else
+                {
+                    Environment.Exit(0);
+                }
+            } catch(Exception e)
+            {
+                Console.WriteLine("Prislo je do napake:");
+                Console.WriteLine(e.Message);
+            }
+             
         }
     }
 }
