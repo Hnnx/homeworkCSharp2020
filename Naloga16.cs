@@ -54,12 +54,14 @@ namespace homeworkCSharp2020
 
             for (int i = 0; i < multiArr.GetLength(0); i++)
             {
+                Console.WriteLine(  "");
 
                 for (int j = 0; j < multiArr.GetLength(1); j++)
                 {
 
-                    totalX += multiArr[0,j];
+                    totalX += multiArr[j,0];
                     totalY += multiArr[i,0];
+
 
                 }
             }

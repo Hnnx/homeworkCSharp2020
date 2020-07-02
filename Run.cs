@@ -106,7 +106,6 @@ namespace homeworkCSharp2020
             Console.WriteLine("V programu definiraj 4 dimenzionalno tabelo tipa int poljubne velikosti.\nTabelo napolni z nakljucnimi vrednostmi med 1 in 10 ter tabelo izpisi.");
             nal15.fourDimDisplay();
 
-            */
 
 
             Console.WriteLine("Naloga 16:");
@@ -115,11 +114,12 @@ namespace homeworkCSharp2020
                 "\nProgram naj sešteje in izpiše vrednost posameznih vrstic tabele.\nProgram naj sešteje in izpiše vrednost posameznih stolpcev tabele.");
             nal16.func();
 
+            */
 
 
-
-
-
+            Console.WriteLine("Naloga 17:");
+            Console.WriteLine("V programu definiraj tabelo String[][] naključne velikosti med 1 in 5 (Math.random()).\nProgram naj uporabnika vpraša naj vnese niz za vsako celico tabele.Program naj nato tabelo izpiše.");
+            nal17.func();
 
 
 
