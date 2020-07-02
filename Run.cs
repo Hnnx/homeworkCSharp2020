@@ -114,13 +114,17 @@ namespace homeworkCSharp2020
                 "\nProgram naj sešteje in izpiše vrednost posameznih vrstic tabele.\nProgram naj sešteje in izpiše vrednost posameznih stolpcev tabele.");
             nal16.func();
 
-            */
 
 
             Console.WriteLine("Naloga 17:");
-            Console.WriteLine("V programu definiraj tabelo String[][] naključne velikosti med 1 in 5 (Math.random()).\nProgram naj uporabnika vpraša naj vnese niz za vsako celico tabele.Program naj nato tabelo izpiše.");
+            Console.WriteLine("V programu definiraj tabelo String[][] nakljucne velikosti med 1 in 5 (Math.random()).\nProgram naj uporabnika vprasa naj vnese niz za vsako celico tabele.Program naj nato tabelo izpiše.");
             nal17.func();
 
+
+            */
+
+            Console.WriteLine("Naloga 18:");
+            Console.WriteLine("Kalkulatorju, ki smo ga naredili na vajah dodaj se vsaj dve funkciji. (referenca - Java calculator)");
 
 
 
