@@ -10,10 +10,7 @@ namespace homeworkCSharp2020
         public static void func()
         {
 
-            for (int i = 0; i < arrlength; i++)
-            {
-
-            }
+        
 
 
         }

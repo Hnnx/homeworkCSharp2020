@@ -121,16 +121,15 @@ namespace homeworkCSharp2020
             nal17.func();
 
 
+            */
 
             Console.WriteLine("Naloga 18:");
             Console.WriteLine("Kalkulatorju, ki smo ga naredili na vajah dodaj se vsaj dve funkciji. (referenca - Java calculator)");
             nal18.izbirniMeni();
 
-            */
 
             Console.WriteLine("Naloga 19:");
             Console.WriteLine("Program z vaje Metode3.java spremeni tako, da se za zadnjim številom v tabeli ne izpiše vejica.");
-            nal19.func();
 
 
 

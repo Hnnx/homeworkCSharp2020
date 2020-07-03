@@ -76,6 +76,7 @@ namespace homeworkCSharp2020
                     break;
                 default:
                     Console.WriteLine("Neveljaven ukaz");
+                    repeat();
                     break;
             }
 
@@ -124,8 +125,21 @@ namespace homeworkCSharp2020
 
         private static void fib()
         {
-            //IMPLEMENT FIB
-            repeat();
+            try
+            {
+                Console.WriteLine("Vnesti stevilo");
+                int x = Convert.ToInt32(Console.ReadLine());
+                //int y = calcFib(x);
+                int y = calcFibRecur(x);
+                Console.WriteLine("Fibonacci {0} = {1}", x,y);
+
+            } catch (Exception e)
+            {
+                Console.WriteLine("Napacen ukaz, opis napake:");
+                Console.WriteLine(e.Message);
+            }
+
+
         }
 
         private static void ostanek()
@@ -300,5 +314,40 @@ namespace homeworkCSharp2020
             }
              
         }
+    
+        private static int calcFib(int x)
+        {
+
+            int rezultat = 0;
+            int prvaStevilka = 0;
+            int drugaStevilka = 1;
+
+
+                if( x == 0) { return 0; }
+                if( x == 1) { return 1; }
+
+
+            for (int i = 0; i < x; i++)
+            {
+
+                rezultat = prvaStevilka + drugaStevilka;
+                prvaStevilka = drugaStevilka;
+                drugaStevilka = rezultat;
+
+            }
+            return rezultat;
+
+
+        }
+
+        private static int calcFibRecur(int x)
+        {
+
+            if (x == 0) return 0;
+            if (x == 1) return 1;
+
+            return calcFibRecur(x - 1) + calcFibRecur(x - 2);
+        }
+
     }
 }
