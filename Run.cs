@@ -155,11 +155,18 @@ namespace homeworkCSharp2020
             Console.WriteLine("Programu Kalkulator 2, ki smo ga naredili na vajah dopolni prazne metode in mu dodaj še vsaj tri poljubne funkcije.");
             nal21.izbirniMeni();
 
-            */
 
             Console.WriteLine("Naloga 22");
             Console.WriteLine("Napiši program, ki bo uporabnika vprašal naj vnese poljuben niz. Vneseni niz naj nato zapiše v datoteko mojiNizi.txt. Program naj ohrani prej zabeležene nize.");
             nal22.writeFile();
+
+
+
+            Console.WriteLine("Naloga 23");
+            Console.WriteLine("Program naj iz priložene datoteke prebere števila ter jih sešteje.Rezultat naj se sharni v datoteko, pod zadnjim številom.");
+            */
+            nal23.rFile();
+            nal23.wFile();
 
 
 
