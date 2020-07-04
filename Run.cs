@@ -131,7 +131,6 @@ namespace homeworkCSharp2020
             Console.WriteLine("Program z vaje Metode3.java spremeni tako, da se za zadnjim številom v tabeli ne izpiše vejica.");
             nal19.func();
 
-            */
 
             Console.WriteLine("Naloga 20");
             Console.WriteLine("Napiši program, ki ima poleg metode main še dve metodi:\n" +
@@ -149,6 +148,19 @@ namespace homeworkCSharp2020
 
 
             nal20.displayTable(exampleArray);
+            Console.WriteLine("\nAverage: " + nal20.averageArray(exampleArray));
+
+
+            Console.WriteLine("Naloga 21");
+            Console.WriteLine("Programu Kalkulator 2, ki smo ga naredili na vajah dopolni prazne metode in mu dodaj še vsaj tri poljubne funkcije.");
+            nal21.izbirniMeni();
+
+            */
+
+            Console.WriteLine("Naloga 22");
+            Console.WriteLine("Napiši program, ki bo uporabnika vprašal naj vnese poljuben niz. Vneseni niz naj nato zapiše v datoteko mojiNizi.txt. Program naj ohrani prej zabeležene nize.");
+            nal22.writeFile();
+
 
 
 

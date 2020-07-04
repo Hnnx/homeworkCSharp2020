@@ -9,11 +9,11 @@ namespace homeworkCSharp2020
 
 
         //AVG ARRAY
-        public static int averageArray(int[] arr)
+        public static double averageArray(int[] arr)
         {
             int arrSize = arr.Length;
 
-            int total = 0;
+            double total = 0;
 
             for (int i = 0; i < arrSize; i++)
             {
@@ -34,9 +34,20 @@ namespace homeworkCSharp2020
 
             for (int i = 0; i < arr.Length; i++)
             {
-                Console.WriteLine(arr[i]+" ");
+
+
+                if(i == arr.Length - 1)
+                {
+                    Console.Write(arr[i]);
+                }
+                else
+                {
+                    Console.Write(arr[i]+", ");
+                }
+
 
             }
+
         }
 
 
