@@ -12,63 +12,12 @@ namespace homeworkCSharp2020
     class nal22
     {
 
-
-        public static void writeToFile()
-        {
-
-            string path = @"C:\Users\anhjje\source\repos\HNNX\homeworkCSharp2020";
-            string userInput = "";
-
-
-
-
-            try
-            {
-                //userInput = Console.ReadLine();
-
-                if (!File.Exists(path))
-                {
-
-                    using (StreamWriter sw = File.CreateText(path))
-                    {
-
-                        sw.WriteLine("Test");
-                    }
-
-                }
-
-                using (StreamReader sr = File.OpenText(path))
-                {
-
-                    string line;
-                    while( (line = sr.ReadLine()) != null)
-                    {
-                        Console.WriteLine(line);
-                    }
-                }
-
-
-            }
-            catch (IOException e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-        }
-
-
-
         public static void writeFile()
         {
             Console.WriteLine("Vnesi niz:");
             string userInput = Console.ReadLine();
 
             File.AppendAllText("mojiNizi.txt", userInput);
-
-
 
 
         }
