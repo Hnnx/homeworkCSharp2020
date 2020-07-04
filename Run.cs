@@ -126,11 +126,29 @@ namespace homeworkCSharp2020
             Console.WriteLine("Kalkulatorju, ki smo ga naredili na vajah dodaj se vsaj dve funkciji. (referenca - Java calculator)");
             nal18.izbirniMeni();
 
-            */
 
             Console.WriteLine("Naloga 19:");
             Console.WriteLine("Program z vaje Metode3.java spremeni tako, da se za zadnjim številom v tabeli ne izpiše vejica.");
             nal19.func();
+
+            */
+
+            Console.WriteLine("Naloga 20");
+            Console.WriteLine("Napiši program, ki ima poleg metode main še dve metodi:\n" +
+                "Prva metoda je tipa double in sprejme 1 dimenzionalno tabelo tipa int - vrne naj povprečno vrednost vseh števil v tabeli\n" +
+                "Druga metoda je tipa void in sprejme 1 dimenzionalno tabelo tipa int -prejeto tabelo naj izpiše\n" +
+                "V metodi main deklariraj 1 dimenzionalno tabelo, tipa int, velikosti 50 in jo napolni z naključnimi števili vrednosti med 1000 in 5000);");
+
+            //DECLARE ARR
+            int[] exampleArray = new int[20];
+
+            for (int i = 0; i < exampleArray.Length; i++)
+            {
+                exampleArray[i] = i;
+            }
+
+
+            nal20.displayTable(exampleArray);
 
 
 
