@@ -69,12 +69,16 @@ pojavta črki ‘a’  in ’t’. Število pojavitev naj izpiše v številu in 
 
 >Naloga 11
 ```
-Program naj sprejme argument v obliki celega števila. Program naj izpiše ime meseca, katerega koledarsko zaporedje se ujema z vnesenim številom. Če vneseno število ni enako nobenemu mesecu naj program izpiše: "Great Scott!".
+Program naj sprejme argument v obliki celega števila. 
+Program naj izpiše ime meseca, katerega koledarsko zaporedje se ujema z vnesenim številom. 
+Če vneseno število ni enako nobenemu mesecu naj program izpiše: "Great Scott!".
 ```
 
 >Naloga 12
 ```
-Napiši program, ki preko argumenta sprejme šest mestno število. Če vnešeno število ni šest mestno naj se izpiše: "Stevilo ne ustreza pogojem". Če vnešeno število vstreza pogojem, pa naj program sešteje prve tri števila z zadnjimi tremi.
+Napiši program, ki preko argumenta sprejme šest mestno število. 
+Če vnešeno število ni šest mestno naj se izpiše: "Stevilo ne ustreza pogojem". 
+Če vnešeno število vstreza pogojem, pa naj program sešteje prve tri števila z zadnjimi tremi.
 ```
 
 >Naloga 13
@@ -96,5 +100,103 @@ Program naj sešteje vsa števila v tabeli in izpiše rezultat
 V programu definiraj tabelo 4 dimenzionalno tabelo tipa int poljubne velikosti. 
 Tabelo napolni z naključnimi vrednostmi med 1 in 10 ter tabelo izpiši.
 ```
+
+
+>Naloga 16
+```
+Program naj od uporabnika zahteva vnos 2 števil, ki predstavljata velikost dvo dimenzionalne tabele tipa int[][].
+Program naj tabelo napolni z naključnimi števili vrednosti med 1 in 170. 
+
+Program naj izpiše tabelo
+Program naj sešteje in izpiše vrednost vseh števil v tabeli.
+Program naj sešteje in izpiše vrednost posameznih vrstic tabele.
+Program naj sešteje in izpiše vrednost posameznih stolpcev tabele.
+```
+
+>Naloga 17
+```
+V programu definiraj tabelo String[][] naključne velikosti med 1 in 5.
+Program naj uporabnika vpraša naj vnese niz za vsako celico tabele.
+
+Program naj nato tabelo izpiše.
+```
+
+
+>Naloga 18
+```
+Kalkulatorju, ki smo ga naredili na vajah dodaj še vsaj dve funkciji.
+```
+
+
+>Naloga 19
+```
+Program z vaje Metode3.java spremeni tako, da se za zadnjim številom v tabeli ne izpiše vejica.
+```
+
+
+>Naloga 20
+```
+Napiši program, ki ima poleg metode main še dve metodi:
+ - Prva metoda je tipa double in sprejme 1 dimenzionalno tabelo tipa int - vrne naj povprečno vrednost vseh števil v tabeli
+ - Druga metoda je tipa void in sprejme 1 dimenzionalno tabelo tipa int - prejeto tabelo naj izpiše
+V metodi main deklariraj 1 dimenzionalno tabelo, tipa int, velikosti 50 in jo napolni z naključnimi števili vrednosti med 1000 in 5000
+```
+
+
+>Naloga 21
+```
+Programu Kalkulator 2, ki smo ga naredili na vajah, dopolni prazne metode in mu dodaj še vsaj tri poljubne funkcije.
+```
+
+
+
+>Naloga 22
+```
+Napiši program, ki bo uporabnika vprašal naj vnese poljuben niz. 
+Vneseni niz naj nato zapiše v datoteko mojiNizi.txt. Program naj ohrani prej zabeležene nize.
+```
+
+
+
+>Naloga 23
+```
+Program naj iz priložene datoteke prebere števila ter jih sešteje. Rezultat naj se sharni v datoteko, pod zadnjim številom.
+```
+
+
+
+>Naloga 24
+```
+Napiši program, ki bo prebral priložen datoteko (stevila.txt) in:
+
+vsa števila, ki so deljiva s 3, 5 in 11 zapiše v datoteko deljva.txt,
+sešteje vsa števila v posamezni vrstici in rezultate zapiše v datoteko sesteteVrstice.txt, 
+kjer naj bodo vsi rezultati v isti vrsti, ločeni s podpičjem (pred prvim številom in za zadnjim, ne sme biti podpičja)
+vsa števila, ki so praštevila, zapiše v datoteko prastevila.txt
+izračuna povprečno vrednost vseh števil v datoteki in rezultat izpiše v konzoli (terminal)
+```
+
+
+>Naloga 25
+```
+Dokončaj razred CestnoKolo programa Kolo3, ki smo ga naredili na današnjih vajah.
+
+Zahteve:
+Metoda za višanje prestav (prestave ne smejo presesti maksimalne vrednosti MAX_STEVILO_PRESTAV)
+Metoda za nižanje prestav
+Metoda, ki bo izpisala lasnosti kolesa (metoda naj si pomaga z že narejeno metodo v razredu Kolo)
+```
+
+
+>Naloga 26
+```
+Razred Koordinate v programu Zemljepis dopolni z:
+
+metodo public String hemisfera(), ki vrne 2-črkovni zapis polobel (S, J, V, Z), 
+na katerih se nahaja koordinata: severne in zahode koordinate imajo pozitiven predznak, južne in vzhodne pa negativnega.
+metodi public void pristej(Koordinate drugeKoordinate) in public void odstej(Koordinate drugeKoordinate), 
+metodi naj omogočijo seštevanje in odštevanje koordiant.
+```
+
 
 
