@@ -1,7 +1,8 @@
 Refreshing C Sharp skills, let's do this :hamster:
 
 Converting all Java homework assignments from to C#
-# OPIS NALOG: /play trombone
+# OPIS NALOG:
+
 
 >Naloga 1
 ```
