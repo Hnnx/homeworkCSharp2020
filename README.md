@@ -203,6 +203,19 @@ metodi naj omogočijo seštevanje in odštevanje koordiant.
 Napiši program, ki bo z uporabo osnovne 2D grafike ter preprostih oblik izrisal avto.
 ```
 
+>Naloga 28
+```
+Igro, ki smo jo dokončali na prejšnjih vajah (16.01), prilagodi:
+
+Igra za dva igralca - na zgornji strani okna naj bo še en lopar za drugega igralca.
+Igra naj šteje točke, ko nasprotni igralec zgreši žogo
+Zmaga tisti igralec, ki prvi doseže 3 točke
+Igra naj poveča hitrost na vsakih 7 odbojev žoge
+Igra naj izpiše kateri igralec je zmagal
+Bonus:
+Zmaga tisti igralec ki prvi doseže 2 zmage
+```
+
 >Extra 1
 ```
 Uporabnik naj v program vnese znesek na računu in vplačan znesek gotovine. 
