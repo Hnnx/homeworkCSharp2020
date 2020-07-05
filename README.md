@@ -1,8 +1,7 @@
-# homeworkCSharp2020
-Refreshing C Sharp skills, let's do this >:O
+Refreshing C Sharp skills, let's do this :hamster:
 
-Converting all homework assignments from Java to C#
-# OPIS NALOG:
+Converting all Java homework assignments from to C#
+# OPIS NALOG: /play trombone
 
 >Naloga 1
 ```
