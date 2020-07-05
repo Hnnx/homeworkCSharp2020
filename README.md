@@ -139,7 +139,7 @@ Program z vaje Metode3.java spremeni tako, da se za zadnjim številom v tabeli n
 Napiši program, ki ima poleg metode main še dve metodi:
  - Prva metoda je tipa double in sprejme 1 dimenzionalno tabelo tipa int - vrne naj povprečno vrednost vseh števil v tabeli
  - Druga metoda je tipa void in sprejme 1 dimenzionalno tabelo tipa int - prejeto tabelo naj izpiše
-V metodi main deklariraj 1 dimenzionalno tabelo, tipa int, velikosti 50 in jo napolni z naključnimi števili vrednosti med 1000 in 5000
+V metodi main deklariraj 1 dim tabelo tipa int velikosti 50 in jo napolni z naključnimi števili med 1000 in 5000
 ```
 
 
@@ -197,6 +197,29 @@ na katerih se nahaja koordinata: severne in zahode koordinate imajo pozitiven pr
 metodi public void pristej(Koordinate drugeKoordinate) in public void odstej(Koordinate drugeKoordinate), 
 metodi naj omogočijo seštevanje in odštevanje koordiant.
 ```
+
+>Naloga 27
+```
+Napiši program, ki bo z uporabo osnovne 2D grafike ter preprostih oblik izrisal avto.
+```
+
+>Extra 1
+```
+Uporabnik naj v program vnese znesek na računu in vplačan znesek gotovine. 
+Program naj nato izpiše koliko denarja moramo vrniti za posamezne bankovce in kovance.
+```
+
+>Extra 2
+```
+Napiši program, ki bo preštel število besed v priloženi datoteki.
+```
+
+>Extra 3
+```
+Napiši program, ki ga lahko uporabljamo kot nadomestilo za kocko pri igri Človek ne jezi se!
+Program naj nam omogoča ponoven met kocke, dokler ga ne želimo zapustiti.
+```
+
 
 
 
