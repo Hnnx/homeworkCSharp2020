@@ -164,9 +164,22 @@ namespace homeworkCSharp2020
 
             Console.WriteLine("Naloga 23");
             Console.WriteLine("Program naj iz priložene datoteke prebere števila ter jih sešteje.Rezultat naj se sharni v datoteko, pod zadnjim številom.");
-            nal23.rFile();
-            nal23.wFile();
+            nal23.readNums();
+
+
+            Console.WriteLine("Naloga 24");
+            Console.WriteLine("Napiši program, ki bo prebral priložen datoteko (stevila.txt) in:\n" +
+                "vsa števila, ki so deljiva s 3, 5 in 11 zapiše v datoteko deljva.txt," +
+                "sešteje vsa števila v posamezni vrstici in rezultate zapiše v datoteko sesteteVrstice.txt," +
+                "kjer naj bodo vsi rezultati v isti vrsti, ločeni s podpičjem(pred prvim številom in za zadnjim, ne sme biti podpičja)" +
+                "vsa števila, ki so praštevila, zapiše v datoteko prastevila.txt" +
+                "izračuna povprečno vrednost vseh števil v datoteki in rezultat izpiše v konzoli(terminal)");
             */
+
+
+            nal24.readBigFile();
+
+
 
 
 

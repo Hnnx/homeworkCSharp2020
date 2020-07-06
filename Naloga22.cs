@@ -6,9 +6,6 @@ using System.Text;
 namespace homeworkCSharp2020
 {
 
-    //Napiši program, ki bo uporabnika vprašal naj vnese poljuben niz. Vneseni niz naj nato zapiše v datoteko mojiNizi.txt. Program naj ohrani prej zabeležene nize.
-
-
     class nal22
     {
 
@@ -19,7 +16,7 @@ namespace homeworkCSharp2020
             {
                 Console.WriteLine("Vnesi niz:");
                 string userInput = Console.ReadLine();
-                string path = @"F:\out\vpisCont.txt";
+                string path = @"F:\out\mojiNizi.txt";
 
 
                 File.AppendAllText(path, userInput + Environment.NewLine);
