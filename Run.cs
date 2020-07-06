@@ -158,7 +158,7 @@ namespace homeworkCSharp2020
 
             Console.WriteLine("Naloga 22");
             Console.WriteLine("Napiši program, ki bo uporabnika vprašal naj vnese poljuben niz. Vneseni niz naj nato zapiše v datoteko mojiNizi.txt. Program naj ohrani prej zabeležene nize.");
-            nal22.writeFile();
+            nal22.func();
 
 
 
@@ -167,8 +167,6 @@ namespace homeworkCSharp2020
             nal23.rFile();
             nal23.wFile();
             */
-
-            nal16.func();
 
 
 

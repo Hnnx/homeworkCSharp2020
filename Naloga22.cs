@@ -12,15 +12,39 @@ namespace homeworkCSharp2020
     class nal22
     {
 
-        public static void writeFile()
+        public static void func()
         {
-            Console.WriteLine("Vnesi niz:");
-            string userInput = Console.ReadLine();
 
-            File.AppendAllText("mojiNizi.txt", userInput);
+            try
+            {
+                Console.WriteLine("Vnesi niz:");
+                string userInput = Console.ReadLine();
+                string path = @"F:\out\vpisCont.txt";
 
+
+                File.AppendAllText(path, userInput + Environment.NewLine);
+                Console.WriteLine("Zelis vpisati se en niz? Y/N");
+                userInput = Console.ReadLine();
+
+                if (userInput.Equals("Y", StringComparison.OrdinalIgnoreCase))
+                {
+
+                    func();
+                }
+
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+
+            }
 
         }
 
+
     }
+
+
+
 }
