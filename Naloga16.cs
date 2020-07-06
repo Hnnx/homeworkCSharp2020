@@ -35,7 +35,7 @@ namespace homeworkCSharp2020
                 {
                     //FILL WITH RANDOM 1-170
                     Random rdm = new Random();
-                    multiArr[i, j] = rdm.Next(1, 5);
+                    multiArr[i, j] = rdm.Next(1, 171);
 
 
                     //DISPLAY TABLE
@@ -54,20 +54,23 @@ namespace homeworkCSharp2020
 
             for (int i = 0; i < multiArr.GetLength(0); i++)
             {
-                Console.WriteLine(  "");
+                Console.WriteLine("");
+                //RESET TOTAL  na 0 PO VSAKI ITERACIJI
+                totalX = 0;
+                totalY = 0;
 
                 for (int j = 0; j < multiArr.GetLength(1); j++)
                 {
-
-                    totalX += multiArr[j,0];
-                    totalY += multiArr[i,0];
+                    //ZA VRSTICE DAS   ARRAY [i]  [j]  -> za Stolpe obratno! ([j]  [i])
+                    totalX += multiArr[i,j];
+                    totalY += multiArr[j,i];
 
 
                 }
-            }
-
             Console.WriteLine("Total x: {0}", totalX);
             Console.WriteLine("Total y: {0}", totalY);
+            }
+
 
 
 

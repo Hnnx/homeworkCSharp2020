@@ -164,9 +164,11 @@ namespace homeworkCSharp2020
 
             Console.WriteLine("Naloga 23");
             Console.WriteLine("Program naj iz priložene datoteke prebere števila ter jih sešteje.Rezultat naj se sharni v datoteko, pod zadnjim številom.");
-            */
             nal23.rFile();
             nal23.wFile();
+            */
+
+            nal16.func();
 
 
 
