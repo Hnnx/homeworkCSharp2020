@@ -15,7 +15,7 @@ namespace homeworkCSharp2020
             string path = @"F:\out\st.txt";
             string[] numz = File.ReadAllLines(path);
 
-            string path2 = @"F:\out\st2.txt";
+            //string path2 = @"F:\out\st2.txt";
 
 
             foreach (var num in numz)
