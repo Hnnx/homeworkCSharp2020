@@ -174,14 +174,18 @@ namespace homeworkCSharp2020
                 "kjer naj bodo vsi rezultati v isti vrsti, ločeni s podpičjem(pred prvim številom in za zadnjim, ne sme biti podpičja)" +
                 "vsa števila, ki so praštevila, zapiše v datoteko prastevila.txt" +
                 "izračuna povprečno vrednost vseh števil v datoteki in rezultat izpiše v konzoli(terminal)");
-            */
-
-
             nal24.readBigFile();
 
 
 
+            Console.WriteLine("Naloga 25:");
+            Console.WriteLine("Dokončaj razred CestnoKolo programa Kolo3, ki smo ga naredili na današnjih vajah." +
+                "Zahteve:Metoda za višanje prestav(prestave ne smejo presesti maksimalne vrednosti MAX_STEVILO_PRESTAV)" +
+                "Metoda za nižanje prestav" +
+                "Metoda, ki bo izpisala lasnosti kolesa(metoda naj si pomaga z že narejeno metodo v razredu Kolo)");
+            */
 
+            Naloga25.Kolo.testF();
 
 
 
