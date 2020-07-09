@@ -260,7 +260,7 @@ namespace homeworkCSharp2020
             Console.WriteLine("************");
             Console.WriteLine(Environment.NewLine);
 
-
+            */
             Console.WriteLine("Naloga 24");
             Console.WriteLine("Napiši program, ki bo prebral priložen datoteko (stevila.txt) in:\n" +
                 "vsa števila, ki so deljiva s 3, 5 in 11 zapiše v datoteko deljva.txt," +
@@ -270,7 +270,7 @@ namespace homeworkCSharp2020
                 "izračuna povprečno vrednost vseh števil v datoteki in rezultat izpiše v konzoli(terminal)");
             nal24.readBigFile();
 
-
+            /*
             Console.WriteLine(Environment.NewLine);
             Console.WriteLine("************");
             Console.WriteLine(Environment.NewLine);
@@ -282,16 +282,12 @@ namespace homeworkCSharp2020
                 "Zahteve:Metoda za višanje prestav(prestave ne smejo presesti maksimalne vrednosti MAX_STEVILO_PRESTAV)" +
                 "Metoda za nižanje prestav" +
                 "Metoda, ki bo izpisala lasnosti kolesa(metoda naj si pomaga z že narejeno metodo v razredu Kolo)");
-            */
-
-            Kolo.testF();
-
 
 
             Console.WriteLine(Environment.NewLine);
             Console.WriteLine("************");
             Console.WriteLine(Environment.NewLine);
-
+            */
 
 
 
