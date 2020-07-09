@@ -31,7 +31,7 @@ namespace homeworkCSharp2020
 
                         for (int i = 0; i < intNumz.Length; i++)
                         {
-                            intNumz[i] = Convert.ToInt32(strNumz);
+                            intNumz[i] = Convert.ToInt32(strNumz[i]);
                             vsotaVsehStevil += intNumz[i];
                         }
 
@@ -40,15 +40,20 @@ namespace homeworkCSharp2020
 
 
                         //DELJIVA.TXT
+                        deljivaStevila();
 
 
-                    // PRIME.TXT
+                        // PRIME.TXT
+                        primeStevila();
 
 
-                    //SESTEJ VRSTIC
-
+                        //SESTEVEK VRSTIC
+                        sestevekVrstic();
 
                     }
+
+                    int povprecje = vsotaVsehStevil / steviloStevil;
+                    Console.WriteLine("Povprecje vseh stevil je {0}", povprecje);
                 }
 
             }
@@ -58,6 +63,11 @@ namespace homeworkCSharp2020
                 Console.WriteLine("Napaka pri branju datoteke {0}, opis napake: "+e.Message, filePath);
                 Console.WriteLine("Strack trace: " +e.StackTrace);
             }
+
+        }
+
+        private static void deljivaStevila(int[] arr)
+        {
 
         }
 
