@@ -8,69 +8,78 @@ namespace homeworkCSharp2020
     class nal24
     {
 
+
         public static void readBigFile()
         {
 
-            //Read File, Lines (array) to String, Split to Array, Convert to INT array
-            string path = @"C:\out\st.txt";
-            string deljivaPath = @"C:\out\deljiva.txt";
-            string primePath = @"C:\out\prime.txt";
-            string[] readNumFile = File.ReadAllLines(path);
-            string arrToStr = String.Concat(readNumFile);
-            string[] stringNumz = arrToStr.Split(";");
-            int total = 0;
+            string filePath = @"C:\out\st.txt";
 
-            int[] intNumz = new int[stringNumz.Length];
-
-            for (int i = 0; i < intNumz.Length; i++)
+            try
             {
-                //Convert to INT
-                intNumz[i] = Convert.ToInt32(stringNumz[i]);
 
-
-                //Pokni v Deljiva.txt
-                if (intNumz[i] % 3 == 0 && intNumz[i] % 5 == 0 && intNumz[i] % 11 == 0)
+                using (StreamReader sr = new StreamReader(filePath))
                 {
-                    File.AppendAllText(deljivaPath, intNumz[i].ToString());
+                    string vrstica;
+                    int vsotaVsehStevil = 0;
+                    int steviloStevil = 0;
 
+                    while( (vrstica  = sr.ReadLine()) != null)
+                    {
+                        string[] strNumz = vrstica.Split(";");
+                        int[] intNumz = new int[strNumz.Length];
+
+
+                        for (int i = 0; i < intNumz.Length; i++)
+                        {
+                            intNumz[i] = Convert.ToInt32(strNumz[i]);
+                            vsotaVsehStevil += intNumz[i];
+                        }
+
+                        steviloStevil += intNumz.Length;
+
+
+
+                        //DELJIVA.TXT
+                        deljivaStevila();
+
+
+                        // PRIME.TXT
+                        primeStevila();
+
+
+                        //SESTEVEK VRSTIC
+                        sestevekVrstic();
+
+                    }
+
+                    int povprecje = vsotaVsehStevil / steviloStevil;
+                    Console.WriteLine("Povprecje vseh stevil je {0}", povprecje);
                 }
 
-                //Izpisi total v terminal
-                total += intNumz[i];
-
-                /*
-                //Pokni v prime.txt
-                if (!File.Exists(primePath))
-                {
-                if (isPrime(intNumz[i]))
-                {
-                File.AppendAllText(primePath, intNumz[i].ToString() + Environment.NewLine);
-                }
-                }
-
-                */
             }
+            catch (Exception e)
+            {
 
-            int avg = total / intNumz.Length;
-            Console.WriteLine("Average vseh stevilk je: {0}", avg);
+                Console.WriteLine("Napaka pri branju datoteke {0}, opis napake: "+e.Message, filePath);
+                Console.WriteLine("Strack trace: " +e.StackTrace);
+            }
 
         }
 
+        private static void deljivaStevila(int[] arr)
+        {
+
+        }
 
         private static Boolean isPrime(int n)
         {
             int counter = 0;
-
             for (int i = 1; i <= n; i++)
             {
-                if (n % i == 0)
-                {
-                    counter++;
-                }
+                if (n % i == 0) counter++;
             }
 
             return counter == 2;
-
         }
 
     }
