@@ -269,6 +269,8 @@ namespace homeworkCSharp2020
                 "vsa števila, ki so praštevila, zapiše v datoteko prastevila.txt" +
                 "izračuna povprečno vrednost vseh števil v datoteki in rezultat izpiše v konzoli(terminal)");
             nal24.readBigFile();
+
+
             /*
             Console.WriteLine(Environment.NewLine);
             Console.WriteLine("************");

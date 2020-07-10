@@ -40,15 +40,15 @@ namespace homeworkCSharp2020
 
 
                         //DELJIVA.TXT
-                        deljivaStevila();
+                        deljivaStevila(intNumz);
 
 
                         // PRIME.TXT
-                        primeStevila();
+                        primeStevila(intNumz);
 
 
                         //SESTEVEK VRSTIC
-                        sestevekVrstic();
+                        sestevekVrstic(intNumz);
 
                     }
 
@@ -67,6 +67,16 @@ namespace homeworkCSharp2020
         }
 
         private static void deljivaStevila(int[] arr)
+        {
+
+        }
+
+        private static void primeStevila(int[] arr)
+        {
+
+        }
+
+        private static void sestevekVrstic(int[] arr)
         {
 
         }
