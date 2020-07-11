@@ -12,7 +12,7 @@ namespace homeworkCSharp2020
         public static void readBigFile()
         {
 
-            string filePath = @"C:\out\st.txt";
+            string filePath = @"F:\out\st.txt";
 
             try
             {
@@ -23,7 +23,7 @@ namespace homeworkCSharp2020
                     int vsotaVsehStevil = 0;
                     int steviloStevil = 0;
 
-                    while( (vrstica  = sr.ReadLine()) != null)
+                    while ((vrstica = sr.ReadLine()) != null)
                     {
                         string[] strNumz = vrstica.Split(";");
                         int[] intNumz = new int[strNumz.Length];
@@ -40,15 +40,15 @@ namespace homeworkCSharp2020
 
 
                         //DELJIVA.TXT
-                        deljivaStevila();
+                        deljivaStevila(intNumz);
 
 
                         // PRIME.TXT
-                        primeStevila();
+                        primeStevila(intNumz);
 
 
                         //SESTEVEK VRSTIC
-                        sestevekVrstic();
+                        sestevekVrstic(intNumz);
 
                     }
 
@@ -60,13 +60,37 @@ namespace homeworkCSharp2020
             catch (Exception e)
             {
 
-                Console.WriteLine("Napaka pri branju datoteke {0}, opis napake: "+e.Message, filePath);
-                Console.WriteLine("Strack trace: " +e.StackTrace);
+                Console.WriteLine("Napaka pri branju datoteke {0}, opis napake: " + e.Message, filePath);
+                Console.WriteLine("Strack trace: " + e.StackTrace);
             }
 
         }
 
         private static void deljivaStevila(int[] arr)
+        {
+
+            string deljivaPath = @"F:\out\deljiva.txt";
+
+                for (int i = 0; i < arr.Length; i++)
+                {
+
+                    if (arr[i] % 3 == 0 && arr[i] % 5 == 0 && arr[i] % 11 == 0)
+                    {
+                        File.AppendAllText(deljivaPath, arr[i].ToString() + " ");
+
+                    }
+                }
+            
+
+
+        }
+
+        private static void primeStevila(int[] arr)
+        {
+
+        }
+
+        private static void sestevekVrstic(int[] arr)
         {
 
         }
@@ -81,6 +105,7 @@ namespace homeworkCSharp2020
 
             return counter == 2;
         }
+
 
     }
 }

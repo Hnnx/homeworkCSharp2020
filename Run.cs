@@ -268,7 +268,14 @@ namespace homeworkCSharp2020
                 "kjer naj bodo vsi rezultati v isti vrsti, ločeni s podpičjem(pred prvim številom in za zadnjim, ne sme biti podpičja)" +
                 "vsa števila, ki so praštevila, zapiše v datoteko prastevila.txt" +
                 "izračuna povprečno vrednost vseh števil v datoteki in rezultat izpiše v konzoli(terminal)");
+
+            Console.WriteLine(Environment.NewLine);
+            Console.WriteLine("************");
+            Console.WriteLine(Environment.NewLine);
+
             nal24.readBigFile();
+
+
             /*
             Console.WriteLine(Environment.NewLine);
             Console.WriteLine("************");
