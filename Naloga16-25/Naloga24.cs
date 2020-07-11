@@ -12,7 +12,7 @@ namespace homeworkCSharp2020
         public static void readBigFile()
         {
 
-            string filePath = @"C:\out\st.txt";
+            string filePath = @"F:\out\st.txt";
 
             try
             {
@@ -69,6 +69,17 @@ namespace homeworkCSharp2020
         private static void deljivaStevila(int[] arr)
         {
 
+            for (int i = 0; i < arr.Length; i++)
+            {
+
+                if (arr[i] % 3 == 0 && arr[i] % 5 == 0 && arr[i] % 11 == 0)
+                {
+                    string deljivaPath = @"F:\out\deljiva.txt";
+                    File.AppendAllText(deljivaPath, arr[i].ToString()+" ");
+
+                }
+            }
+
         }
 
         private static void primeStevila(int[] arr)
@@ -91,6 +102,7 @@ namespace homeworkCSharp2020
 
             return counter == 2;
         }
+
 
     }
 }

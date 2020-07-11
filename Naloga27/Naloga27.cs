@@ -9,7 +9,6 @@ namespace homeworkCSharp2020.Naloga27
 
         public static void displayCar()
         {
-            //WPF?
            
 
         }
