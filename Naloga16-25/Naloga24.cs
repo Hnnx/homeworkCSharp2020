@@ -23,7 +23,7 @@ namespace homeworkCSharp2020
                     int vsotaVsehStevil = 0;
                     int steviloStevil = 0;
 
-                    while( (vrstica  = sr.ReadLine()) != null)
+                    while ((vrstica = sr.ReadLine()) != null)
                     {
                         string[] strNumz = vrstica.Split(";");
                         int[] intNumz = new int[strNumz.Length];
@@ -60,8 +60,8 @@ namespace homeworkCSharp2020
             catch (Exception e)
             {
 
-                Console.WriteLine("Napaka pri branju datoteke {0}, opis napake: "+e.Message, filePath);
-                Console.WriteLine("Strack trace: " +e.StackTrace);
+                Console.WriteLine("Napaka pri branju datoteke {0}, opis napake: " + e.Message, filePath);
+                Console.WriteLine("Strack trace: " + e.StackTrace);
             }
 
         }
@@ -69,16 +69,19 @@ namespace homeworkCSharp2020
         private static void deljivaStevila(int[] arr)
         {
 
-            for (int i = 0; i < arr.Length; i++)
-            {
+            string deljivaPath = @"F:\out\deljiva.txt";
 
-                if (arr[i] % 3 == 0 && arr[i] % 5 == 0 && arr[i] % 11 == 0)
+                for (int i = 0; i < arr.Length; i++)
                 {
-                    string deljivaPath = @"F:\out\deljiva.txt";
-                    File.AppendAllText(deljivaPath, arr[i].ToString()+" ");
 
+                    if (arr[i] % 3 == 0 && arr[i] % 5 == 0 && arr[i] % 11 == 0)
+                    {
+                        File.AppendAllText(deljivaPath, arr[i].ToString() + " ");
+
+                    }
                 }
-            }
+            
+
 
         }
 
